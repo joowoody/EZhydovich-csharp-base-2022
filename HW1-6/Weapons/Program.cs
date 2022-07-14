@@ -2,7 +2,7 @@
 
 namespace Weapons
 {
-    internal class Program
+    internal static class Program
     {
         public static void Main()
         {
@@ -65,7 +65,7 @@ namespace Weapons
             {
                 foreach (var weapon in weapons)
                 {
-                    Console.WriteLine(weapon.Price);
+                    Console.WriteLine($"Price of {weapon.Name}: {weapon.Price}");
                 }
             }
         }
