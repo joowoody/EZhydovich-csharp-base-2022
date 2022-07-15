@@ -64,12 +64,17 @@ namespace Weapons
                 Price = 82,
                 
             };
+            
             usp.Holster();
             Console.WriteLine(usp._friendlyname);
-
-
-
-
+            
+            var usp2 = usp.Copy();
+            usp2.Name = "Interesting pistol";
+            usp2.Price = 21;
+            usp2.DmgOfShot = 74;
+            
+            Console.WriteLine($"New weapon is: {usp.GetType()}, name:  {usp2.Name}");
+            
             do
             {
                 i = int.TryParse(Console.ReadLine(), out option);
@@ -90,13 +95,6 @@ namespace Weapons
                     Console.WriteLine($"Price of {weapon.Name}: {weapon.Price}");
                 }
             }
-
-            var usp2 = usp.Copy();
-            usp2.Name = "Interesting pistol";
-            usp2.Price = 21;
-            usp2.DmgOfShot = 74;
-            
-            Console.WriteLine($"New weapon is: {usp.GetType()}, name:  {usp2.Name}");
         }
     }
 }  
