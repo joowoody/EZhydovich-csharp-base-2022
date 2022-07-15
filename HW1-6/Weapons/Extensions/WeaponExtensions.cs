@@ -4,13 +4,14 @@ namespace Weapons.Extensions;
 
 public static class WeaponExtensions
 {
-    public static Weapon Copy(this Weapon weapon)
+    public static Bow Copy(this Bow bow)
     {
         return new Bow
         {
-            Name = weapon.Name,
-            Price = weapon.Price,
-            DmgOfShot = weapon.DmgOfShot,
+            Name = bow.Name,
+            Price = bow.Price,
+            DmgOfShot = bow.DmgOfShot,
+            Range = bow.Range
         };
     } 
 }
