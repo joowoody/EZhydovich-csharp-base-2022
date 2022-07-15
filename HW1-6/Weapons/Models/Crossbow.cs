@@ -4,6 +4,10 @@ namespace Weapons.Models;
 
 public class Crossbow: NonFirearm, IDamage, IRecharge
 {
+    public override string Name { get; set; }
+    public override int Price { get; set; }
+    public override int DmgOfShot { get; set; }
+    public override int Range { get; set; }
    
     public void Damage()
     {
@@ -14,4 +18,6 @@ public class Crossbow: NonFirearm, IDamage, IRecharge
     {
         Console.WriteLine("Recharge 5 sec!");
     }
+
+    
 }

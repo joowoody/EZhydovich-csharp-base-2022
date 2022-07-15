@@ -4,14 +4,21 @@ namespace Weapons.Models;
 
 internal class Sword: Cutting, IDamage
 {
-    private int Lenght { get; set; }
+    public const int DamageOfHelth = 20;
+    private int _lenght { get; set; }
+    public override string Name { get; set; }
+    public override int Price { get; set; }
+    public override int DmgOfShot { get; set; }
+    
     public Sword(int length)
     {
-        Lenght = length;
+        _lenght = length;
     }
     
     public void Damage()
     {
-        Console.WriteLine($"Herak, pizza :) {DmgOfShot}");
+        Console.WriteLine($"Herak, pizza :) disadvantage of health {DamageOfHelth}");
     }
+
+   
 }

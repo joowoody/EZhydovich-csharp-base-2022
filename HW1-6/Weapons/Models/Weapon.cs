@@ -1,8 +1,8 @@
 namespace Weapons.Models;
 
-public class Weapon
+public abstract class Weapon
 {
-    public string Name { get; set; }
-    public int Price { get; set; }
-    public int DmgOfShot { get; set; }
+    public abstract string Name { get; set; }
+    public abstract int Price { get; set; }
+    public abstract int DmgOfShot { get; set; }
 }

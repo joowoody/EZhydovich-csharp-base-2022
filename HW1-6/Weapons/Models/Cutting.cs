@@ -1,5 +1,6 @@
 namespace Weapons.Models;
 
-public class Cutting : Weapon
+public abstract class Cutting : Weapon
 {
+    
 }

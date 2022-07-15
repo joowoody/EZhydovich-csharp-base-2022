@@ -1,6 +1,6 @@
 namespace Weapons.Models;
 
-public class NonFirearm : Weapon
+public abstract class NonFirearm : Weapon
 {
-   public int Range { get; set; }
+   public abstract int Range { get; set; }
 }
