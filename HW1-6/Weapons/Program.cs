@@ -20,7 +20,7 @@ namespace Weapons
                 },
                 new Crossbow
                 {
-                    Name = "Scorpion",
+                    Name = "Scorpion",//game of Thrones :)
                     DmgOfShot = 50,
                     Price = 200,
                     Range = 200
