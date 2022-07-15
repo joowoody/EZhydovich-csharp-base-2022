@@ -75,6 +75,10 @@ namespace Weapons
             
             Console.WriteLine($"New weapon is: {usp.GetType()}, name:  {usp2.Name}");
             
+            Console.WriteLine("Print object names press 1");
+            Console.WriteLine("Print object price press 2");//Это пример того что можно вывести любую информацию об обьекте
+
+            
             do
             {
                 i = int.TryParse(Console.ReadLine(), out option);
